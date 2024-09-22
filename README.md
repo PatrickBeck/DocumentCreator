@@ -1,11 +1,13 @@
 # Übersicht
 
-DocumentCreator füllt mithilfe von Parametern bzw. Excel-Dateien Word- und Excel-Vorlagen-Dateien. Backend ist MiniWord bzw MiniExcel. 
+DocumentCreator ist ein Kommandozeilenprogrammen welches, mit Parameteraufrufen oder Excel-Dateien, Word- und Excel-Templates befüllt. Backend ist MiniWord bzw MiniExcel. 
 Das System arbeitet mit Platzhaltern. Die Platzhalter werden über die Kommandozeile übergeben bzw. über die Kopfzeile der Einlesedatei automatisch generiert.
 
 Bsp. Parameter -n setzt für die erste Datei "Devices" fest und in der Kopfzeile steht "Name". Der Tag heißt dann "{{Devices.Name}}"
 
 Bei der Übergabe von einzelnen Parameter wird der Platzhalter direkt definiert z. B. {{Projektnr}}. 
+
+Der Aufruf ["Mehrere Dateien einlesen mit unterschiedlichen Einlesemodie"](#beispiel) ist unten grafisch dargestellt
 
 <img src="./Function.png" width="800"/>
 
@@ -49,7 +51,7 @@ Bei der Übergabe von einzelnen Parameter wird der Platzhalter direkt definiert 
 
 # Beispiele
 
-## Mehrere Dateien einlesen mit unterschiedlichen Einlesemodie
+## Mehrere Dateien einlesen mit unterschiedlichen Einlesemodie <a name="beispiel"></a>
 
 	-t Testdatei.docx -o output.docx -i InputTestFileList.xlsm InputTestFileTable.xlsm InputTestFilePlaceholder.xlsm  -m l t p -n Second Befehlsgeräte Projektinfos
 
